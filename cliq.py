@@ -13,7 +13,6 @@ mydb = mysql.connect(
     database = "cliqdb"
 )
 
-# 
 cursor = mydb.cursor()
 cursor.execute('create database if not exists cliqdb')
 cursor.execute('create table if not exists thoughts (id integer primary key auto_increment, date text, thought text)')
